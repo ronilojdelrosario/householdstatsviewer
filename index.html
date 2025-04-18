@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+
+    <div id="map">
+        <div id="colorbar">
+            <img class="cb" src="colorbar.png">
+        </div>
+    </div>
+
+    <div id="controls_panel">
+
+    <h1>Percentage of households</h1>
+
+    <form class="form" id="cat_form">
+        <label for="cat" name="catlabel" id="catlabel">Category:</label>
+        <br>
+        <select name="category" id="cat" onchange="changeCategory(this.value)">
+        <option value="garbage">Usual Manner of Kitchen Garbage Disposal</option>
+        <option value="toilet">Kind of Toilet Facility</option>
+        <option value="fuellight">Fuel for Lighting</option>
+        <option value="fuelcook">Fuel for Cooking</option>
+        <option value="waterdrink">Main Source of Water Supply for Drinking</option>
+        <option value="watercook">Main Source of Water Supply for Cooking</option>
+        </select>
+    </form>
+    &nbsp
+
+    <div id="buttons_options">
+    </div>
+
+    </div>
+    </div>
+
+</body>
+<script src="/controls.js"></script>
+</html>
